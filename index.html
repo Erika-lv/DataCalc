@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataCalc</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <h1>DataCalc</h1>
+
+        <p>Descubra uma nova data a partir de outra.</p>
+
+        <label for="data">Data inicial</label>
+        <input type="date" id="data">
+
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" min="0">
+
+        <label for="unidade">Unidade</label>
+        <select id="unidade">
+            <option value="dias">Dias</option>
+            <option value="meses">Meses</option>
+            <option value="anos">Anos</option>
+        </select>
+
+        <button>Calcular</button>
+
+        <div class="resultado">
+            <p>Resultado:</p>
+            <h2 id="resultado">--/--/----</h2>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
